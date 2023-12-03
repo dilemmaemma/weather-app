@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import moment from 'moment';
+//import moment from 'moment';
 import countryList from '../data/countries';
 
 const App = () => {
-    const now = moment().format('MMMM Do YYYY, h:mm:ss a');
+    //const now = moment().format('MMMM Do YYYY, h:mm:ss a');
     const [city, setCity] = useState('');
     const [state, setState] = useState('');
     const [country, setCountry] = useState('');
@@ -24,7 +24,7 @@ const App = () => {
             setCountry('');
             setCountryId('');
         }
-    }
+    };
 
     useEffect(() => {
         console.log(country, countryId);
@@ -40,7 +40,7 @@ const App = () => {
             })
             .catch(err => {
                 console.error(err);
-            })
+            });
     };
 
     const handleReset = () => {
@@ -54,6 +54,7 @@ const App = () => {
 
     return (
         <div>
+            {process.env.REACT_APP_API_APPID}
             <form onSubmit={handleSubmit} onReset={handleReset}>
                 <div>
                     <label htmlFor='country'>Country: </label>
@@ -98,7 +99,7 @@ const App = () => {
                 </div>
             </form>
         </div>
-    )
-}
+    );
+};
 
 export default App;
