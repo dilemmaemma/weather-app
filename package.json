@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dilemmaemma/react-weather-app.git"
+    "url": "git+https://github.com/dilemmaemma/weather-app.git"
   },
   "author": "dilemmaemma",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dilemmaemma/react-weather-app/issues"
+    "url": "https://github.com/dilemmaemma/weather-app/issues"
   },
-  "homepage": "https://github.com/dilemmaemma/react-weather-app#readme",
+  "homepage": "https://github.com/dilemmaemma/weather-app#readme",
   "browserslist": {
     "production": [
       ">0.2%",
